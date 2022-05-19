@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+.container--bkcolor{
+	background-color: #00408e;
+	width: 100%;
+}
+.nav--bkcolor{
+	background-color: #0a3665!important; 
+}
+.canvas--bkcolor{
+	background-color: #f0f0f0;
+	font-size: 1.5rem;
+}
+.canvas--items{
+	color: #0a3665!important;
+	text-decoration: none;
+	font-family: 'Josefin Sans'
+}
+.nav--img{
+	width: 100%;
+}
+.blackwhite{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.blackwhite:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.zoom{
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.zoom:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.menu--icon{
+	margin-left: 10%;
+	background-image: url(../assets/menu.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px transparent;
+	height: 40px;
+	width: 40px;
+}
+.close--icon{
+	background-image: url(../assets/close.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px transparent;
+	height: 40px;
+	width: 40px;
+}
+.carrito--icon{
+	margin-right: 10%;
+	background-image: url(../assets/carrito.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px transparent;
+	height: 40px;
+	width: 40px;
+}
+.conference{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Josefin Sans'
+}
+.escudo{
+	display: inline;
+	height: 60px;
+	width: 60px;
+	justify-self: center;
+	padding: 5px;
+}
+.container-md{
+	padding: 20px!important;
+}
+.teams{
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
+	align-content: space-around;
+	max-width: 100%;
+}
+@media all and (max-width: 991px){
+	.teams{
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+@media all and (max-width: 576px){
+	.escudo{
+		height: 30px;
+		width: 30px;
+		padding: 1.8px;
+	}
+}
+.index--main{
+	display: grid;
+	grid-template-columns: .5fr .5fr repeat(10, 1fr) .5fr .5fr;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+.playoff{
+	grid-column: 1/15;
+	max-width: 100%;
+}
+.jersey{
+	margin-top: 10px;
+	grid-column: 3/9;
+	border-radius: 20px;
+	max-width: 100%;
+}
+.cap{
+	margin-top: 10px;
+	grid-column: 10/13;
+	border-radius: 20px;
+	max-width: 100%;
+	align-self: center;
+}
+.tshirt{
+	margin-top: 10px;
+	grid-column: 3/6;
+	border-radius: 20px;
+	max-width: 100%;
+	align-self: center;
+}
+.hoodie{
+	margin-top: 10px;
+	grid-column: 7/13;
+	border-radius: 20px;
+	max-width: 100%;
+}
+.bron{
+	margin-top: 10px;
+	grid-column: 3/13;
+	border-radius: 20px;
+	width: 100%;
+}
+
+@media all and (max-width: 760px){
+	.jersey{
+		margin-top: 10px;
+		grid-column: 2/14;
+	}
+	.cap{
+		margin-top: 10px;
+		grid-column: 2/14;
+	}
+	.tshirt{
+		margin-top: 10px;
+		grid-column: 2/14;
+	}
+	.hoodie{
+		margin-top: 10px;
+		grid-column: 2/14;
+	}
+	.bron{
+		margin-top: 10px;
+		grid-column: 2/14;
+	}
+}
+.encabezadoTienda{
+	background-color: #0a3665;
+	height: 4em;
+	margin-top: 20px;
+}
+.encabezadoTienda h3{
+	align-self: center;
+	color: #ffff;
+	text-shadow: 1px 0 0 #00408e, -1px 0 0 #00408e, 0 1px 0 #00408e, 0 -1px 0 #00408e, 1px 1px #00408e, -1px -1px 0 #00408e, 1px -1px 0 #00408e, -1px 1px 0 #00408e;
+}
+.producto{
+	display: inline-block;
+	border: 2px solid #fcfcfc;
+	border-radius: 20px;
+	box-sizing: border-box;
+	margin: 5px;
+	padding: 10px;
+	background: #ffff;
+	-webkit-box-shadow: 9px 8px 19px -4px #000000; 
+	box-shadow: 9px 8px 19px -4px #000000;
+}
+.producto h6{
+	text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.producto-img{
+	width: 100%;
+}
+footer{
+	font-family: 'Titillium Web';
+}
+.carruselContenedor{
+	max-height: 80vh;
+	width: 100%;
+	overflow: hidden;
+	align-content: center!important;
+}
+.map-shadow{
+	-webkit-box-shadow: 13px 19px 20px -4px #8F8F8F; 
+	box-shadow: 13px 19px 20px -4px #8F8F8F;
+}
+.formulario{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+@media all and (max-width: 767px){
+	.formulario{
+		justify-content:center;
+	}
+}
+.formulario div{
+	display: inline-block;
+	text-align: center;
+	margin-top: 1rem;
+	align-self: center;
+}
+.formularioSeleccion{
+	height: 2em;
+}
